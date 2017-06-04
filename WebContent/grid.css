@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing : border-box;
+}
+
+.form{
+	display: flex;
+	padding: 18px;
+	flex-direction : row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(23, 75, 123, 0.17);
+	box-shadow : 1px 1px 1px #B0BEC5;
+	width: 40%;
+	flex-wrap: wrap;
+}
+
+.form .form-row{
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+}
+
+.form .label {
+	width : 40%;
+	padding: 8px;
+	display:flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.form .value {
+	width : 60%;
+	padding: 8px;
+}
+
+.login-heading{
+	
+}
+
+.vertical-align{
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+

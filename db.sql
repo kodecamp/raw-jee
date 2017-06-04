@@ -1,0 +1,1 @@
+create table web_students( id varchar2(256),name varchar2(256),address varchar2(256),college_name varchar2(256), version bigint);

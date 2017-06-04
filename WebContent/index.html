@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Details</title>
+
+<link rel="stylesheet" href="./app2.css" />
+<link rel="stylesheet" href="./grid.css" />
+<link rel="stylesheet" href="./login2.css" />
+<link rel="stylesheet" href="./animations.css" />
+
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+</head>
+<body>
+	<!-- <ul>
+		<li><a href="./startup">Http Request</a></li>
+		<li><a href="./studentList?action=/studentList"
+			onclick="displayList()">Students Demo</a></li>
+		<li><a id="myLink" href="#"
+			onclick="displayStudentsList();return false;">Students Demo -
+				Retrying</a></li>
+	</ul> -->
+	<div class="nav-wrapper">
+		<div class="nav-bar">
+			<span><img src="./images/kodecamp_logo_white_200x60.svg"></span>
+
+			<ul>
+				<li><a href="http://kodecamp.bitballoon.com">Experienced
+						Fresher Programme ?</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="login-box-container">
+
+		<div id="loading-container">
+
+			<div id="preloader_1">
+				<span></span> <span></span> <span></span> <span></span> <span></span>
+			</div>
+
+		</div>
+		<div id="login-box">
+			<div class="login-form">
+				<img src="./images/user.svg" class="login-image">
+				<div class="vertical-align">
+
+					<div class="label">Username</div>
+					<div class="value">
+						<input type="text" id="userName" name="userName" value="" class="form-input-username">
+					</div>
+				</div>
+
+				<div class="vertical-align">
+					<div class="label">Password</div>
+					<div class="value">
+						<input type="password" id="password" name="password" value=""
+							class="form-input-password">
+					</div>
+				</div>
+
+				<div class="button-panel">
+					<input type="button" class="login-btn" value="Login"
+						onclick="displayStudentsList();return false;" /> <input
+						type="button" class="delete-btn" value="Forgot Password"
+						onclick="submitForm('update')" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class=footer>
+		<div class="footer-bar">
+			<h5>@Copyright</h5>
+			<p>
+				<a href="http://kodecamp.bitballoon.com" style="color: black;">@:
+					http://kodecamp.bitballoon.com</a>, @mail: kodecamp.allhabad@gmail.com
+			</p>
+		</div>
+	</div>
+</body>
+
+<script>
+	function displayStudentsList() {
+		document.getElementById("loading-container").style.display = "block";
+		var userName = document.getElementById("userName").value;
+		var password = document.getElementById("password").value;
+		window.location
+				.assign("http://localhost:8080/webui.fundamentals/studentList?action=VIEW_LIST&userName="+userName+"&password="+password);
+	}
+
+	window.onload = function() {
+		document.getElementById("loading-container").style.display = "none";
+	};
+</script>
+</html>

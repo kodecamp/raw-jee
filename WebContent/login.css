@@ -1,0 +1,99 @@
+#login-box-container {
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#login-box-container #login-box {
+	width: 40%;
+	/* height: 50vh; */
+	
+	/* background-color: #263238; */
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 2px #787D80;
+	transition: all 0.3s ease-in;	
+}
+
+#login-box-container #login-box:hover{
+	box-shadow: 1px 1px 10px #787D80;
+}
+
+
+
+.login-form{
+	
+	display: flex;
+	padding: 16px;
+	flex-direction : column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #263238; */
+	color: #263238;
+}
+
+.login-image{
+	width: 60px;
+	height: 60px;
+	margin: 8px;
+}
+
+.form-input-username{
+	background: url(./images/profile.svg) no-repeat scroll 0px 0px;
+	padding-right:30px;
+	/* background-position: 2px 3px; */
+	text-indent:30px;
+	width: 300px;
+}
+
+.form-input-password{
+	background: url(images/key2.svg) no-repeat scroll 0px 0px;
+	padding-right:30px;
+	/* background-position: 2px 3px; */
+	text-indent:30px;
+	width: 300px;
+	font-weight: bold;
+}
+
+.login-btn {
+	padding: 8px;
+	margin: 8px;
+    border-radius: 0;
+    border: 0;
+    border: 1px solid #263238;
+    color: #263238;
+    /* background-color: #263238; */
+    
+    background-color: white;
+    transition: all .3s ease-in;
+    font-size: 1em;
+}
+
+.login-btn:hover {
+	/* border-radius: 18px; */
+	background-color: #263238;
+	color: white;
+}
+
+.forget-btn {
+	padding: 8px;
+	margin: 8px;
+    background-color: white;
+    /* background-color: white; */
+    transition: all .3s ease-in;
+    font-size: 1em;
+    
+	border: 1px solid #c62828 !important;
+    color: #c62828 !important;
+}
+
+.forget-btn:hover{
+	border: 1px solid #c62828 !important;
+    color: white !important;
+    background-color: #c62828;
+    /* color: #263238 !important; */
+}
